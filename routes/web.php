@@ -23,10 +23,8 @@ Route::get('/izzy', function () {
     return view('izzy');
 });
 
-Route::get('/helloworld', function () {
-    return '<h1>Hello World</h1>';
-});
-
 Route::get('/about', function () {
     return '<h1>This is the About page</h1>';
 });
+
+Route::get('/hello', 'HelloController@hello');
